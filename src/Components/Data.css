@@ -1,0 +1,34 @@
+.speedometer-image{
+    height: 300px;
+    width: 100vw;
+    object-fit: cover;
+}
+.vinInfo-container{
+    margin-top: 100px;
+    text-align: center;
+}
+hr{
+    border: .5px solid white;
+    width: 250px;
+}
+form{
+    margin-top: 50px;
+}
+.vinInfo-container input{
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.vinBtn{
+    margin-left: 10px;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+label{
+    color: white;
+    font-size: .9rem;
+}
+
+

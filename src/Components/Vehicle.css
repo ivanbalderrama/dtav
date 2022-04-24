@@ -1,0 +1,16 @@
+.vehicle__info-container{
+    overflow-x: auto;
+    border: 1px solid white;
+}
+th{
+    background-color: grey;
+    padding: 10px;
+    
+}
+td{
+    background-color: darkgray;
+    padding: 10px;
+}
+th td {
+    max-width: 300px;
+}
