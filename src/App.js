@@ -5,8 +5,15 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <h1>DTAV</h1>
+    <header>
+    <h1>DTAV</h1>
+    </header>
+      <main>
       <Data/>
+      </main>
+      <footer>
+        
+      </footer>
     </div>
   );
 }

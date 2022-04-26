@@ -1,7 +1,10 @@
 import React from 'react'
 import './Vehicle.css'
 export default function Vehicle(props) {
-    if (props.data !== undefined) {
+    
+    
+    if(Object.keys(props.data).length !== 0){
+        const vehicleInfo = props.data;
         return (
             <div>
                 <div className="vehicle__info-container">
@@ -11,28 +14,26 @@ export default function Vehicle(props) {
                                 <th>Year</th>
                                 <th>Make</th>
                                 <th>Model</th>
-                                <th>Manufacturer</th>
                                 <th>Engine</th>
-                                <th>Trim</th>
-                                <th>Transmission</th>
+                                <th>MPG</th>
+                                <th>Body</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>{props.data.year}</td>
-                                <td>{props.data.make}</td>
-                                <td>{props.data.model}</td>
-                                <td>{props.data.manufacturer}</td>
-                                <td>{props.data.engine}</td>
-                                <td>{props.data.trim}</td>
-                                <td>{props.data.transmission}</td>
-                            </tr>
+                                <tr>
+                                <td>{vehicleInfo.years[0].year}</td>
+                                <td>{vehicleInfo.make.name}</td>
+                                <td>{vehicleInfo.model.name}</td>
+                                <td>{vehicleInfo.engine.name}</td>
+                                <td>City: {vehicleInfo.mpg.city}/Hwy: {vehicleInfo.mpg.highway}</td>
+                                <td>{vehicleInfo.categories.vehicleType}</td>
+                                </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         )
-    }
+     }
 }
 
 /*

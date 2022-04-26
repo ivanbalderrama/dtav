@@ -1,15 +1,18 @@
 .vehicle__info-container{
     overflow-x: auto;
-    border: 1px solid white;
+    border-radius: 10px;
+}
+table{
+    margin: auto;
 }
 th{
-    background-color: grey;
+    background-color: rgb(80, 80, 80);
     padding: 10px;
-    
+    font-size: .9rem;
 }
 td{
-    background-color: darkgray;
     padding: 10px;
+    font-size: .8rem;
 }
 th td {
     max-width: 300px;

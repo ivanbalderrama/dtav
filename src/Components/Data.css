@@ -18,6 +18,9 @@ form{
     text-align: center;
     display: block;
     margin: auto;
+    border-radius: 20px;
+    padding: 8px 20px 8px 20px;
+    border: none;
 }
 .vinBtn{
     margin-left: 10px;
@@ -25,10 +28,18 @@ form{
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    padding: 8px 25px 8px 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 44, 44);
+    color: white;
+    -webkit-box-shadow: 1px 4px 9px 0px rgba(255,255,255,0.38); 
+box-shadow: 1px 4px 9px 0px rgba(255, 103, 103, 0.38);
 }
 label{
     color: white;
     font-size: .9rem;
+    padding-bottom: 20px;
 }
 
 
