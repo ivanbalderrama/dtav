@@ -8,7 +8,7 @@
     text-align: center;
 }
 hr{
-    border: .5px solid white;
+    border: .05px solid white;
     width: 250px;
 }
 form{
@@ -40,6 +40,10 @@ label{
     color: white;
     font-size: .9rem;
     padding-bottom: 20px;
+}
+.vehicle__history-container{
+    text-align: center;
+    height: 200px;
 }
 
 
