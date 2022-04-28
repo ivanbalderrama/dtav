@@ -20,7 +20,6 @@ export default function Data() {
             .get(apiUrl)
             //If succeeds then log to console/setCustomers
             .then((res) => {
-                console.log(res);
                 setVehicle(res.data);
             })
             //otherwise catch error and console log
@@ -29,24 +28,17 @@ export default function Data() {
             });
     }
     function handleSubmit(e) {
-        
         if (vin.length !== 17) {
             alert("Field must contain 17 letters and numbers.");
         } else {
             e.preventDefault();
             fetchData();
+            if(Object.keys(vehicle).length >= 1){
             setSearchedHistory(searchedHistory => [...searchedHistory, vehicle]);
-        }
+        }}
+        
         
     };
-    /*--------------------------------------------------------------------------------------------
-    const [searchedHistory, setSearchedHistory] = useState([])
-    useEffect(() => {
-        const storeVehicle = [];
-        storeVehicle.push(vehicle)
-        setSearchedHistory(storeVehicle);
-    }, [vehicle])
-     --------------------------------------------------------------------------------------------*/
     return (
         <div>
             <div className="image-container">

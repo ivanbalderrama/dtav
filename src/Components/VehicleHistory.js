@@ -1,11 +1,7 @@
 import React from 'react';
 
 export default function VehicleHistory(props) {
-    console.log(props)
-    //CONDITIONAL NEEDS TO GO HERE
-    if(props.searched.length > 0){
-
-    
+    if(Array.isArray(props.searched) && props.searched.length > 0){
         return (
             <div>
                 <div className="title-container">

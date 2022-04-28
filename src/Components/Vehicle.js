@@ -1,7 +1,6 @@
 import React from 'react'
 import './Vehicle.css'
 export default function Vehicle(props) {
-    console.log(props.data);
     if(Object.keys(props.data).length !== 0){
         const vehicleInfo = props.data;
         return (
